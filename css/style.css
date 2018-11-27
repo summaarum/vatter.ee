@@ -1,0 +1,141 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* Background */
+html {
+  background: url('../assets/background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Profile image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.image-container img {
+	animation: float 3s ease-in-out infinite;
+	-webkit-animation: float 3s ease-in-out infinite;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 100%;
+  max-height: 400px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Picture animation */
+@keyframes float {
+	0% { transform: translatey(0px); }
+	50% { transform: translatey(-8px); }
+	100% { transform: translatey(0px); }
+}
+
+@-webkit-keyframes float { /* Safari */
+	0% { transform: translatey(0px); }
+	50% { transform: translatey(-8px); }
+	100% { transform: translatey(0px); }
+}
+
+/* Header */
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.header-background {
+  background-color: white;
+  border: 3px solid black;
+  margin: 20px auto 0;
+  max-width: 400px;
+}
+
+/* Social icons */
+.social-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 30px;
+  max-width: 450px;
+}
+
+.social-item {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 60px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.icon {
+  font-size: 35px
+}
+
+.icon-image {
+  max-height: 23px;
+}
+
+/* Colors */
+.instagram {
+  background-color: #cd486b;
+}
+.instagram:hover {
+  background-color: #BB244D;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+.facebook:hover {
+  background-color: #224389;
+}
+
+.mixcloud {
+  background-color: #1d2d3b;
+}
+.mixcloud:hover {
+  background-color: #11212f;
+}
+
+.soundcloud {
+  background-color: #f73a0e;
+}
+.soundcloud:hover {
+  background-color: #C32702;
+}
+
+/* Hover animations */
+.instagram, .facebook, .mixcloud, .soundcloud {
+  transition: all .2s ease-in-out;
+}
+.instagram:hover, .facebook:hover, .mixcloud:hover, .soundcloud:hover {
+  transform: scale(1.1);
+}
+
+/* SoundCloud Widget */
+.sc-widget {
+  bottom: 0;
+  position: absolute;
+}
+
+@media only screen and (max-width: 550px) {
+  .image-container {
+    margin-top: 50px;
+  }
+}
