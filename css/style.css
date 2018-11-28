@@ -3,6 +3,14 @@
   font-family: 'entypo', sans-serif;
 }
 
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 /* Background */
 html {
   background: url('../assets/background.png') no-repeat center center fixed;
@@ -135,5 +143,13 @@ a:hover {
 @media only screen and (max-width: 550px) {
   .image-container {
     margin-top: 50px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 }
