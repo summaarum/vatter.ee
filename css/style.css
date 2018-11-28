@@ -20,6 +20,15 @@ html {
   background-size: cover;
 }
 
+body {
+  height: 100%;
+  position: relative;
+}
+
+.wrapper {
+  min-height: calc(100vh - 86px);
+}
+
 /* Profile image */
 .image-container {
   display: flex;
@@ -70,7 +79,7 @@ h1 {
 .social-row {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto 30px;
+  margin: 50px auto 150px;
   max-width: 450px;
 }
 
@@ -145,6 +154,10 @@ a:hover {
 @media only screen and (max-width: 550px) {
   .image-container {
     margin-top: 50px;
+  }
+
+  .social-row {
+    margin-bottom: 30px;
   }
 
   .mobile {
