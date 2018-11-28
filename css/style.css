@@ -12,6 +12,10 @@
 }
 
 /* Background */
+html, body {
+  height: 100vh;
+}
+
 html {
   background: url('../assets/background.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -21,12 +25,12 @@ html {
 }
 
 body {
-  height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
-  min-height: calc(100vh - 86px);
+  flex: 1;
 }
 
 /* Profile image */
@@ -79,7 +83,7 @@ h1 {
 .social-row {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto 150px;
+  margin: 50px auto 30px;
   max-width: 450px;
 }
 
@@ -143,12 +147,6 @@ a:hover {
 }
 .instagram:hover, .facebook:hover, .mixcloud:hover, .soundcloud:hover {
   transform: scale(1.1);
-}
-
-/* SoundCloud Widget */
-.sc-widget {
-  bottom: 0;
-  position: absolute;
 }
 
 @media only screen and (max-width: 550px) {
