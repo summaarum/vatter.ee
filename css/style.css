@@ -69,6 +69,7 @@ h1 {
   align-items: center;
   border-radius: 50%;
   display: flex;
+  font-size: 40px;
   height: 60px;
   justify-content: center;
   width: 60px;
@@ -119,11 +120,18 @@ a:hover {
   background-color: #C32702;
 }
 
+.spotify {
+  background-color: #1DB954;
+}
+.spotify:hover {
+  background-color: #137736;
+}
+
 /* Hover animations */
-.instagram, .facebook, .mixcloud, .soundcloud {
+.instagram, .facebook, .mixcloud, .soundcloud, .spotify {
   transition: all .2s ease-in-out;
 }
-.instagram:hover, .facebook:hover, .mixcloud:hover, .soundcloud:hover {
+.instagram:hover, .facebook:hover, .mixcloud:hover, .soundcloud:hover, .spotify:hover {
   transform: scale(1.1);
 }
 
@@ -133,6 +141,10 @@ a:hover {
 }
 
 @media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 5rem;
+  }
+
   .image-container {
     margin-top: 50px;
   }
