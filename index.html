@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Villem Vatter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -90,7 +91,7 @@
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0),
+      minHeight: Math.max((document.documentElement.clientHeight + window.pageYOffset) || 0, window.innerHeight || 0),
       minWidth: 200.00,
       scale: 1.0,
       scaleMobile: 1.00,
